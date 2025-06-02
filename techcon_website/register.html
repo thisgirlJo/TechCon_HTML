@@ -6,17 +6,35 @@
     <body>
         <header>
             <nav>
-                <h1>About TechCon 2024</h1>
+                <h1>Register for TechCon 2024</h1>
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#register">Register</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <form action="/submit-form" method="post">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>
 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+
+                <label for="password">Password: </label>
+                <input type="password" name="password" placeholder="Password" required>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#terms-of-service">Terms of Service</a></label>
+
+                <button type="submit">Register Now</button>
+            </form>
         </main>
+        <footer>
+            <p>&copy; 2024 TechCon. All rights reserved.</p>
+            <p>For inquiries, contact us at <a href="mailto:ogbolejudith@gmail.com"></a></p>
+        </footer>
     </body>
 </html>
